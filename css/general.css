@@ -4,28 +4,6 @@ body{
     background-color: antiquewhite;
 }
 
-/* Estilos para pantallas grandes */
-header {
-    background-color: rgba(0, 0, 0, 0.74); 
-    padding: 25px;
-    height: 50px;
-}
-
-/* Estilos para pantallas medianas */
-@media screen and (max-width: 768px) {
-    header {
-        padding: 15px;
-        height: auto;
-    }
-}
-
-/* Estilos para pantallas pequeñas (como smartphones) */
-@media screen and (max-width: 600px) {
-    header {
-        padding: 10px;
-    }
-}
-
 .logo img{
     height: 66px;
     margin-top: -4pc;
@@ -122,8 +100,27 @@ color: chocolate;
         font-size: 14px; /* Reducción del tamaño de fuente */
     }
 }
+.contacto_animes body header{
+    margin-top: 0;
+    /* no me deja quitar el margen al header del contacto */
+}
+.contacto_animes main{
+    text-align: right;
+    margin-top: 150px;
+    margin-right: 100px;
+}
+.contacto_animes form{
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+.contacto_animes form div{
+    margin-top: 10px;
+}
 
-
+.contacto_animes img{
+    margin-top: 20px;
+}
 .nosotros{
     margin-top: 200px;
     align-content: center;
@@ -137,11 +134,12 @@ color: chocolate;
     text-align: center;
     list-style: none;
 }
-
 .nosotros ul{
     text-align: center;
 }
-
+.nosotros ul a{
+    text-decoration: none;
+}
 .nosotros{
     background-position: center;
 }
@@ -204,7 +202,9 @@ margin-top: 100px;
 .registro div{
     text-align: center;
 }
-
+.hishoka img{
+    /* foto en el registro que no me deja poner de fondo */
+}
 .iniciosesion h1{
     text-align: center;
     margin-top: 150px;
@@ -248,6 +248,27 @@ margin-top: 100px;
             position: static;
         }
     }
+
+    /* Estilos para pantallas grandes */
+header {
+    background-color: rgba(0, 0, 0, 0.74); 
+    padding: 25px;
+    height: 50px;
+}
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+        height: auto;
+    }
+}
+
+/* Estilos para pantallas pequeñas (como smartphones) */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+}
 
 
 
